@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function myfunction()
+        {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const num3 = Number(document.getElementById("num3").value);
+
+            // if ( num1 >= num2 && num1 >= num3 )
+            // {
+            //     document.write(num1 + " is MAX");
+            // }
+            // else if( num2 >= num1 && num2 >= num3 )
+            // {
+            //     document.write(num2 + " is MAX");
+            // }
+            // else if( num3 >= num1 && num3 >= num2 )
+            // {
+            //     document.write(num3 + " is MAX");
+            // }
+
+            const result = Math.max(num1, num2, num3);
+            document.write(result);
+        }
+            
+        
+
+    </script>
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <label>Num1</label>
+    <input type="number" id="num1" name="num1"/>
+
+    <br>
+    <label>Num2</label>
+    <input type="number" id="num2" name="num2"/>
+
+    <br>
+    <label>Num3</label>
+    <input type="number" id="num3" name="num3"/>
+
+    <br>
+    <input type="button" value="MAX" onclick="myfunction()"></input>
+
+    
+    
+</body>
+</html>

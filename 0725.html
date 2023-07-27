@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        function myfunction()
+        {
+            const fName = document.getElementById("firstNameText").value;
+            const lName = document.getElementById("lastNameText").value;
+            document.write(fName);
+            document.write(lName);
+        }
+
+    </script>
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <label>First Name</label>
+    <input type="text" id="firstNameText" name="firstName"/>
+
+    <br>
+    <label>Last Name</label>
+    <input type="text"id="lastNameText" name="lastName"/>
+
+    <br>
+    <input type="button" value="submit" onclick="myfunction()"></input>
+
+    
+    
+</body>
+</html>
